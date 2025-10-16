@@ -4,6 +4,8 @@ import com.example.demo.account.dto.Account;
 import com.example.demo.price.dto.Price;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -12,8 +14,11 @@ import java.util.Collections;
 import java.util.List;
 
 @Component
+@ConditionalOnProperty(name = "file.type", havingValue = "json")
 public class JsonDataParser implements DataParser {
 
+    @Value("${file.account-path-json}")
+    private String accountFilePath;
 
     public List<String> cities() {
         return null;
@@ -28,6 +33,7 @@ public class JsonDataParser implements DataParser {
     }
 
     public List<Account> accounts() {
+        System.out.println("json 파서 사용: " + accountFilePath);
         InputStream is = TypeReference.class.getResourceAsStream("/account.json");
 
         if(is == null){

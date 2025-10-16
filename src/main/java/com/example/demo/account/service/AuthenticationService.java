@@ -17,9 +17,9 @@ public class AuthenticationService {
     private Map<Long, Account> accounts;
 
     @Autowired
-    public AuthenticationService(DataParser jsonDataParser){
+    public AuthenticationService(DataParser dataParser){
         try{
-            this.accounts = jsonDataParser.accounts().stream()
+            this.accounts = dataParser.accounts().stream()
                     .collect(Collectors.toMap(Account::getId, Function.identity()));
 
             System.out.println("AuthenticationService 초기화, " + this.accounts.size() + "로드 완료");
