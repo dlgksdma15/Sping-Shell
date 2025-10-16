@@ -1,24 +1,44 @@
 package com.example.demo.shell;
 
+import com.example.demo.account.dto.Account;
+import com.example.demo.account.service.AuthenticationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 
 @ShellComponent
 public class MyCommands {
 
-    @ShellMethod
+    private final AuthenticationService authService;
+
+    @Autowired // DI
+    public MyCommands(AuthenticationService authService) {
+        this.authService = authService;
+    }
+
+    @ShellMethod("아이디와 비밀번호로 로그인합니다.")
     public String login(long id, String password) {
-        return "%d, %s".formatted(id,password);
+        Account account = authService.login(id,password);
+
+        if(account != null){
+            return account.toString();
+        }
+        return "id or password not correct";
     }
 
     @ShellMethod
     public String logout() {
-        return null;
+        authService.logout();
+        return "good bye";
     }
 
-    @ShellMethod
-    public String currentUser() {
-        return null;
+    @ShellMethod(key = "current-user", value = "현재 로그인된 사용자의 정보를 확인")
+    public String currentUser(){
+        Account currentAccount = authService.getCurrentAccount();
+        if(currentAccount == null){
+            return " ";
+        }
+        return currentAccount.toString();
     }
 
     @ShellMethod
