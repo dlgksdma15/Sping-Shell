@@ -7,6 +7,7 @@
     </appender>
     <appender name="ACCOUNT_FILE" class="ch.qos.logback.core.FileAppender">
         <file>account.log</file>
+        <immediateFlush>true</immediateFlush>
         <append>true</append>
         <encoder>
             <pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
