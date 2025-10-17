@@ -86,7 +86,11 @@ public class PriceService {
             return null;
         }
 
-        Price price = dataParser.price(city, sector);
+//        Price price = dataParser.price(city, sector);
+        Price price = this.price(city, sector);
+        // ================== 디버깅 코드 추가 ==================
+        System.out.println("### DEBUG: price 객체 확인: " + price);
+
         String format = outPutFormatter.format(price, usage);
 
         return format;

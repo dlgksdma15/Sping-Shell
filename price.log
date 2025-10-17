@@ -31,3 +31,124 @@
 2025-10-17 15:55:53,310 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.price(Price{id=1, city='동두천시', sector='가정용', unitPrice=690}) -----
 2025-10-17 15:56:10,123 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.billTotal([동두천시, 가정용, 10]) ----->
 2025-10-17 15:56:10,124 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.billTotal(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:01:08,773 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:01:08,774 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:01:08,781 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:01:08,781 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:01:08,783 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:01:08,790 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:01:08,812 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:01:08,812 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:15:13,196 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:15:13,197 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:15:13,205 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:15:13,205 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:15:13,208 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:15:13,216 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:15:13,241 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:15:13,241 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:17:23,868 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:18:17,003 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:18:17,008 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:18:17,008 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:18:17,010 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:18:17,018 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:18:17,042 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:21:30,870 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:21:30,878 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:21:52,682 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:21:52,690 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:22:43,786 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:22:43,794 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:22:54,756 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:22:54,758 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:22:54,759 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:22:54,761 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:22:54,766 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:22:54,789 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:23:44,066 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:24:22,818 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:24:24,463 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:28:09,646 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:28:09,651 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:28:09,651 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:28:09,654 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:28:09,659 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:28:09,682 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:37,576 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:37,579 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:37,579 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:30:37,581 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:30:37,591 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:30:37,612 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:50,515 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:50,518 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:30:50,518 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:30:50,519 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:30:50,537 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:30:50,571 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:32:16,412 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:32:16,419 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:37:00,546 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:00,549 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:00,549 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:37:00,551 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:37:00,558 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:37:00,585 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:23,711 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:37,824 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:37,825 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:37:48,050 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:37:48,051 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:39:51,827 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:39:51,828 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:39:58,443 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:39:58,443 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:44:14,901 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:44:14,902 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:44:14,905 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:44:14,905 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:44:14,907 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:44:14,913 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:44:14,935 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:44:14,935 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:45:14,335 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:45:14,336 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:45:14,339 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:45:14,339 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:45:14,341 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:45:14,347 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:45:14,370 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:45:14,371 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:54:43,476 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:54:43,476 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 16:54:43,479 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:54:43,479 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 16:54:43,481 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 16:54:43,486 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 16:54:43,511 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 16:54:43,511 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 17:32:22,502 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:32:22,503 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 17:32:22,509 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:32:22,509 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 17:32:22,511 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 17:32:22,515 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 17:32:22,519 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:32:22,519 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 17:33:58,477 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:33:58,478 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 17:33:58,483 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:33:58,483 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 17:33:58,485 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 17:33:58,492 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 17:33:58,524 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:33:58,524 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 17:34:23,572 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:34:23,573 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
+2025-10-17 17:34:23,577 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:34:23,577 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city([동두천시, 파주시, 광주시, 양주시, 단양군, 서산시, 논산시, 금산군, 정읍시, 나주시, 장흥군, 함평군, 완도군, 진도군, 청송군, 고령군, 예천군, 통영시, 사천시, 거제시, 고성군]) -----
+2025-10-17 17:34:23,579 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.sector([동두천시]) ----->
+2025-10-17 17:34:23,586 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.sector([가정용, 일반용, 일반용(미), 전용공업용, 발전용]) -----
+2025-10-17 17:34:23,609 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:30] ----- 이한음 class com.example.demo.shell.MyCommands.city([]) ----->
+2025-10-17 17:34:23,609 INFO [main] c.e.d.p.a.PriceAop [PriceAop.java:34] <----- 이한음 class com.example.demo.shell.MyCommands.city(로그인을 하셔야 이용하실 수 있습니다.) -----
