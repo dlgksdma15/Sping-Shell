@@ -2,9 +2,9 @@ package com.example.demo.common.dataparser;
 
 import com.example.demo.account.dto.Account;
 import com.example.demo.price.dto.Price;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
+
 
 public interface DataParser {
 

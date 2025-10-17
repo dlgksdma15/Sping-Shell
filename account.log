@@ -21,3 +21,4 @@
 2025-10-16 15:31:05,785 INFO [main] c.e.d.a.a.AccountAop [AccountAop.java:26] login ([1, 1])
 2025-10-16 15:32:19,586 INFO [main] c.e.d.a.a.AccountAop [AccountAop.java:26] login ([2, 2])
 2025-10-16 15:32:27,313 INFO [main] c.e.d.a.a.AccountAop [AccountAop.java:26] logout ([])
+2025-10-16 17:31:15,580 INFO [main] c.e.d.a.a.AccountAop [AccountAop.java:26] login ([1, 1])
