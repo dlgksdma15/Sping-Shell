@@ -4,7 +4,7 @@ import com.example.demo.price.dto.Price;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Profile("kor")
+@Profile({"default", "kor"})
 @Component
 public class KoreanOutputFormatter implements OutPutFormatter{
 

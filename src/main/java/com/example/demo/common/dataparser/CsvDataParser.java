@@ -14,26 +14,130 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 @ConditionalOnProperty(name = "file.type", havingValue = "csv")
 public class CsvDataParser implements DataParser{
 
-    @Value("${file.account-path}")
+    @Value("${file.account-path-csv}")
     private String accountFilePath;
 
+    @Value("${file.price-path-csv}")
+    private String priceFilePath;
+
+    @Override
     public List<String> cities() {
-        return null;
+        System.out.println("Price csv 파서 사용: " + priceFilePath);
+        InputStream is = getClass().getResourceAsStream("/" + priceFilePath);
+
+        if(is == null){
+            System.err.println("error: resources/" + priceFilePath + " 파일을 찾을 수 없습니다.");
+            return Collections.emptyList();
+        }
+
+        try(Reader reader = new InputStreamReader(is)){
+            HeaderColumnNameMappingStrategy<Price> strategy = new HeaderColumnNameMappingStrategy<>();
+            strategy.setType(Price.class);
+
+            CsvToBean<Price> csvToBean = new CsvToBeanBuilder<Price>(reader)
+                    .withType(Price.class)
+                    .withMappingStrategy(strategy)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+
+            List<Price> priceList = csvToBean.parse();
+
+            return priceList.stream()
+                    .map(Price::getCity)
+                    .distinct()
+                    .collect(Collectors.toList());
+
+        } catch(Exception e){
+            System.err.println("error: CSV 파일 파싱 중 예외 발생");
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
     }
 
+    @Override
     public List<String> sectors(String city) {
-        return null;
+
+        InputStream is = getClass().getResourceAsStream("/" + priceFilePath);
+
+        if(is == null){
+            System.err.println("error: resources/" + priceFilePath + " 파일을 찾을 수 없습니다.");
+            return Collections.emptyList();
+        }
+
+        try(Reader reader = new InputStreamReader(is, "UTF-8")){ // ← UTF-8 명시
+            HeaderColumnNameMappingStrategy<Price> strategy = new HeaderColumnNameMappingStrategy<>();
+            strategy.setType(Price.class);
+
+            CsvToBean<Price> csvToBean = new CsvToBeanBuilder<Price>(reader)
+                    .withType(Price.class)
+                    .withMappingStrategy(strategy)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+
+            List<Price> priceList = csvToBean.parse();
+
+            List<String> result = priceList.stream()
+                    .filter(price -> {
+                        boolean match = price.getCity().trim().equals(city.trim()); // trim 추가!
+                        return match;
+                    })
+                    .map(Price::getSector)
+                    .distinct()
+                    .collect(Collectors.toList());
+
+            return result;
+
+        } catch(Exception e){
+            System.err.println("error: CSV 파일 파싱 중 예외 발생");
+            e.printStackTrace();
+            return Collections.emptyList();
+        }
     }
 
+    @Override
     public Price price(String city, String sector) {
-        return null;
-    }
 
+        InputStream is = getClass().getResourceAsStream("/" + priceFilePath);
+
+        if(is == null){
+            System.err.println("error: resources/" + priceFilePath + " 파일을 찾을 수 없습니다.");
+            return null;
+        }
+
+        try(Reader reader = new InputStreamReader(is, "UTF-8")){ // ← UTF-8 명시
+            HeaderColumnNameMappingStrategy<Price> strategy = new HeaderColumnNameMappingStrategy<>();
+            strategy.setType(Price.class);
+
+            CsvToBean<Price> csvToBean = new CsvToBeanBuilder<Price>(reader)
+                    .withType(Price.class)
+                    .withMappingStrategy(strategy)
+                    .withIgnoreLeadingWhiteSpace(true)
+                    .build();
+
+            List<Price> priceList = csvToBean.parse();
+
+
+            return priceList.stream()
+                    .filter(price -> {
+                        boolean cityMatch = price.getCity().trim().equals(city.trim()); // trim 추가!
+                        boolean sectorMatch = price.getSector().trim().equals(sector.trim()); // trim 추가!
+                        return cityMatch && sectorMatch;
+                    })
+                    .findFirst()
+                    .orElse(null);
+
+        } catch(Exception e){
+            System.err.println("error: CSV 파일 파싱 중 예외 발생");
+            e.printStackTrace();
+            return null;
+        }
+    }
     public List<Account> accounts() {
         System.out.println("csv 파서 사용: " + accountFilePath);
 

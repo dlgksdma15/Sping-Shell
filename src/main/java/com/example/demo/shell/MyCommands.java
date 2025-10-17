@@ -54,7 +54,8 @@ public class MyCommands {
         List<String> cities = priceService.cities();
 
         if(cities.isEmpty()){
-            return "로드된 지자체 정보가 없습니다.";
+            return "로그인을 하셔야 이용하실 수 있습니다.";
+//            return "로드된 지자체 정보가 없습니다.";
         }
         return cities.toString();
     }
@@ -63,7 +64,8 @@ public class MyCommands {
     public String sector(String city) {
         List<String> sectors = priceService.sectors(city);
         if(sectors.isEmpty()){
-            return "로드된 업종 정보가 없습니다.";
+            return "로그인을 하셔야 이용하실 수 있습니다.";
+//            return "로드된 업종 정보가 없습니다.";
         }
 
         return sectors.toString();
@@ -73,15 +75,20 @@ public class MyCommands {
     public String price(String city, String sector) {
         Price price = priceService.price(city,sector);
         if(Objects.isNull(price)){
-            return "로드된 구간 금액 정보가 없습니다.";
+            return "로그인을 하셔야 이용하실 수 있습니다.";
+//            return "로드된 구간 금액 정보가 없습니다.";
         }
         return price.toString();
     }
 
     @ShellMethod(key = "bill-total", value = "사용자에 따른 금액을 알 수 있는 기능(한/영 지원)")
     public String billTotal(String city, String sector, int usage) {
+        String s = priceService.billTotal(city, sector, usage);
+        if(Objects.isNull(s)){
+            return "로그인을 하셔야 이용하실 수 있습니다.";
+        }
 
-        return priceService.billTotal(city,sector,usage);
+        return s;
     }
 
 

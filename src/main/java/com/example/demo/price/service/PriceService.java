@@ -1,5 +1,7 @@
 package com.example.demo.price.service;
 
+import com.example.demo.account.dto.Account;
+import com.example.demo.account.service.AuthenticationService;
 import com.example.demo.common.dataparser.DataParser;
 import com.example.demo.price.dto.Price;
 import com.example.demo.price.formatter.EnglishOutputFormatter;
@@ -21,14 +23,15 @@ public class PriceService {
 
     private List<String> cityList;
 
-    private List<String> sectorList;
-
     private OutPutFormatter outPutFormatter;
 
+    private AuthenticationService authenticationService;
+
     @Autowired
-    public PriceService(DataParser dataParser, OutPutFormatter outPutFormatter) {
+    public PriceService(DataParser dataParser, OutPutFormatter outPutFormatter, AuthenticationService authenticationService) {
         this.dataParser = dataParser;
         this.outPutFormatter = outPutFormatter;
+        this.authenticationService = authenticationService;
 
         try{
             this.cityList = dataParser.cities();
@@ -43,10 +46,19 @@ public class PriceService {
     }
 
     public List<String> cities() {
+        Account currentAccount = authenticationService.getCurrentAccount();
+        if(currentAccount == null){
+            return Collections.emptyList();
+        }
+
         return this.cityList;
     }
 
     public List<String> sectors(String city) {
+        Account currentAccount = authenticationService.getCurrentAccount();
+        if(currentAccount == null){
+            return Collections.emptyList();
+        }
         if(city == null){
             return null;
         }
@@ -55,6 +67,10 @@ public class PriceService {
     }
 
     public Price price(String city, String sector) {
+        Account currentAccount = authenticationService.getCurrentAccount();
+        if(currentAccount == null){
+            return null;
+        }
         if(city == null || sector == null){
             return null;
         }
@@ -62,6 +78,10 @@ public class PriceService {
     }
 
     public String billTotal(String city, String sector, int usage) {
+        Account currentAccount = authenticationService.getCurrentAccount();
+        if(currentAccount == null){
+            return null;
+        }
         if(city == null || sector == null){
             return null;
         }

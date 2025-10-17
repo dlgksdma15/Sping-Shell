@@ -31,6 +31,22 @@ public class Price {
         this.sector = sector;
         this.unitPrice = unitPrice;
     }
+    // Jackson/CSV 파싱 후 자동 호출되는 setter들
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setCity(String city) {
+        this.city = city != null ? city.trim() : null;  // ← trim 추가
+    }
+
+    public void setSector(String sector) {
+        this.sector = sector != null ? sector.trim() : null;  // ← trim 추가
+    }
+
+    public void setUnitPrice(int unitPrice) {
+        this.unitPrice = unitPrice;
+    }
 
     @Override
     public String toString() {
